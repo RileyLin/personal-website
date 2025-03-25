@@ -263,6 +263,15 @@ nav .container {
     align-items: center;
 }
 
+.profile-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
 .profile-image-placeholder {
     width: 350px;
     height: 350px;
