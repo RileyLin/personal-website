@@ -524,8 +524,13 @@ nav .container {
 
 /* CloudDrift Villa specific styles */
 .clouddrift-logo {
-    object-position: center 75% !important; /* Move the image up to show the bottom text */
-    background-color: #C09A77; /* Match the logo's background color */
+    object-position: center 25% !important; /* Move the image down to properly show logo */
+    object-fit: contain !important; /* Use contain instead of cover */
+    background-color: #C09A77 !important; /* Match the logo's background color and make it important */
+}
+
+.project-card:has(.clouddrift-logo) .project-image {
+    background-color: #C09A77 !important; /* Ensure parent container also has background color */
 }
 
 .project-content {
